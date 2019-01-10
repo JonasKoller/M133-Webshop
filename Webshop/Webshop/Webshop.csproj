@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\products.csv" />
+    <Content Include="Design.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -93,6 +94,13 @@
     <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Design.Master.cs">
+      <DependentUpon>Design.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design.Master.designer.cs">
+      <DependentUpon>Design.Master</DependentUpon>
+    </Compile>
     <Compile Include="Formatters\DecimalExtensionMethods.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Persistency\FileContentReader.cs" />
